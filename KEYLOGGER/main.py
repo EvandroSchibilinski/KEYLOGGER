@@ -9,4 +9,3 @@ __author__ = "EvandroAbreu"
 __license__ = "Unlicense"
 
 from pynput.keyboard import Listener
-print('teste')
