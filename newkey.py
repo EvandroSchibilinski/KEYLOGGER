@@ -31,7 +31,3 @@ finally:
         encerra_programa
     except Exception as e:
         print(f'Erro ao encerrar o programa: {e}')
-
-        git remote add origin https://github.com/EvandroSchibilinski/KEYLOGGER
-        git branch -M main
-        git push -u origin main
