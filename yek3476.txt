@@ -1,0 +1,15 @@
+'t'
+'e'
+'s'
+'t'
+'e'
+Key.space
+'e'
+'v'
+'a'
+'n'
+'d'
+'r'
+'o'
+Key.space
+Key.esc
