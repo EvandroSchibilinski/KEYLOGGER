@@ -1,3 +1,7 @@
+__version__ = "1.0"
+__author__ = "EvandroAbreu"
+__license__ = "Unlicense"
+
 #importando a biblioteca
 from pynput.keyboard import Listener,Key
 import random
